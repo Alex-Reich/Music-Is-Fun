@@ -1,5 +1,10 @@
 function ItunesService(){
 
+  function swapUrlSize(url, pixels) {
+    var sizeString = `${pixels}x${pixels}`;
+    var newURL = url.replace("60x60", sizeString);
+    return newURL;
+  }
     this.getMusicByArtist = function(artist) {
 
       //allows requests to localhost: 8080 otherwise blocked by itunes
@@ -13,7 +18,7 @@ function ItunesService(){
         var songList = response.results.map(function (song) {
                   return {
                       title: song.trackName,
-                      albumArt: song.artworkUrl60,
+                      albumArt: swapUrlSize(song.artworkUrl60, 400),
                       artist: song.artistName,
                       collection: song.collectionName,
                       price: song.collectionPrice,
