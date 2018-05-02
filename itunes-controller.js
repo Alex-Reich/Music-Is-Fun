@@ -13,7 +13,7 @@ function ItunesController() {
     var template = ""
     for (var i = 0; i < songs.length; i++) {
       var song = songs[i];
-
+// Todo: Add link to price button to buy the song
       template += `
       <div class="row">
         <div class="col">
@@ -23,8 +23,8 @@ function ItunesController() {
               <h3>Artist: ${song.artist}</h3>
               <h3>Song: ${song.title}</h3>
               <h3>Album: ${song.collection}</h3>
-              <Button>Price: ${song.price}</Button>
-              <audio controls>
+              <Button href="https://www.apple.com/itunes/music/">Price: ${song.price}</Button>
+              <audio controls controlsList="nodownload">
                 <source src="${song.preview}" type="audio/ogg">
                 Your browser does not support the audio tag.
               </audio>
