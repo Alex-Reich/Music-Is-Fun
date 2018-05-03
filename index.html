@@ -12,21 +12,23 @@
 </head>
 
 <body class="body-bg text-center">
-    <div>
-        <h1 class="silvertext">TuneyLoons</h1>
-        <h2 class="silvertext">That's not all folks!</h2>
+    <div class="coolfont">
+        <h1 class="silvertext bigfont">TuneyLoons</h1>
+        <h2 class="silvertext mediumfont">That's not all folks!</h2>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid searchbar">
         <form class="form-inline mx-auto" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
             <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
             <div class="form-group">
                 <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
-                <button type="submit" class="btn btn-success" id="get-music-button">Get Music</button>
+                <button type="submit" class="btn btn-outline-warning btn-lg" id="get-music-button">Get Music</button>
             </div>
         </form>
         <div id="songs" class="container">
         </div>
     </div>
+    <button onclick="topFunction()" class="btn btn-outline-warning btn-lg" id="myBtn" title="Go to top" >What's up, doc?</button>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="itunes-service.js"></script>
     <script src="itunes-controller.js"></script>
