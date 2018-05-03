@@ -18,7 +18,7 @@ function ItunesService() {
       var songList = response.results.map(function (song) {
         return {
           title: song.trackName,
-          albumArt: swapUrlSize(song.artworkUrl60, 400),
+          albumArt: swapUrlSize(song.artworkUrl60, 200),
           artist: song.artistName,
           collection: song.collectionName,
           price: song.collectionPrice,

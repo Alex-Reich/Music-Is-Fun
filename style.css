@@ -1,3 +1,10 @@
+html {
+    min-width: auto;
+}
+.container {
+    padding-left: 0px;
+    padding-right: 0px
+}
 .body-bg {
 background-color: black;
 }
@@ -16,10 +23,10 @@ background-color: black;
     font-family: cursive;
 }
 .bigfont {
-    font-size: 60pt;
+    font-size: 3rem;
 }
 .mediumfont {
-    font-size: 25pt;
+    font-size: 1rem;
 }
 #myBtn {
     display: none; /* Hidden by default */
