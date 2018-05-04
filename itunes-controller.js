@@ -18,11 +18,7 @@ function ItunesController() {
       <div class="row">
         <div class="col">
           <div class="card align-items-center card-bg">
-          <div class="row">
-          <div class="col-sm-6">
           <img src="${song.albumArt}" alt="" class="albumart">
-          </div>
-          <div class="col-sm-6">
           <div class="card-body">
               <h3>Artist: ${song.artist}</h3>
               <h3>Song: ${song.title}</h3>
@@ -32,8 +28,6 @@ function ItunesController() {
               Your browser does not support the audio tag.
               </audio>
               <h3><a href="https://www.apple.com/itunes/music/" class="btn btn-primary"  target="_blank">Price: ${song.price}</a></h3>
-          </div>
-          </div>
           </div>
         </div>
         </div>
