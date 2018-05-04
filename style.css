@@ -20,13 +20,13 @@ background-color: black;
     display: inline-grid;
 }
 .coolfont {
-    font-family: cursive;
+    font-family: 'Dancing Script', cursive;
 }
 .bigfont {
-    font-size: 3rem;
+    font-size: 6rem;
 }
 .mediumfont {
-    font-size: 1rem;
+    font-size: 3rem;
 }
 #myBtn {
     display: none; /* Hidden by default */
